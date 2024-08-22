@@ -1,0 +1,480 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-line {
+  width: 300px;
+  height: 1px;
+  margin: 40px 0 60px 0;
+  background-color: rgb(245, 241, 241);
+}
+
+.intro-page {
+  background-image: url("./images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.intro-page_container {
+  padding: 30px 50px 0 50px;
+  height: 700px;
+}
+.intro-page_container .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro-page_container .nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+.intro-page_container .nav-menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  cursor: pointer;
+}
+.intro-page_container .nav-menu ul li {
+  color: hsl(0, 0%, 100%);
+  margin-right: 50px;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+.intro-page_container .nav-menu ul li:hover {
+  color: hsl(51, 100%, 49%);
+}
+.intro-page_container .nav-menu ul button {
+  width: 150px;
+  height: 60px;
+  color: hsl(0, 0%, 100%);
+  font-family: "Fraunces", serif;
+  border-radius: 50px;
+  border: none;
+  text-transform: uppercase;
+  background-color: rgba(139, 210, 246, 0.726);
+  transition: 0.3s;
+}
+.intro-page_container .nav-menu ul button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(51, 100%, 49%);
+}
+.intro-page_container .intro-page_title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Fraunces", serif;
+  color: hsl(0, 0%, 100%);
+}
+.intro-page_container .intro-page_title h1 {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
+.intro-page_container .intro-page_title img {
+  margin-top: 60px;
+}
+
+@media only screen and (max-width: 950px) {
+  .intro-page .nav ul li {
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 15px;
+  }
+  .intro-page .nav ul button {
+    font-size: 12px;
+    font-weight: 400;
+    width: 100px;
+    height: 40px;
+  }
+  .intro-page .intro-page_title h1 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .nav ul li {
+    display: none;
+  }
+}
+@media only screen and (max-width: 367px) {
+  .intro-page .nav ul button {
+    display: none;
+  }
+  .intro-page .intro-page_title h1 {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 10px;
+  }
+  .intro-page .intro-page_title img {
+    margin-top: 90px;
+  }
+}
+.second-page {
+  background-color: white;
+}
+.second-page_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.second-page_container .second-page_text {
+  margin-left: 150px;
+}
+.second-page_container .second-page_text h2 {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(212, 27%, 19%);
+  padding-right: 50px;
+}
+.second-page_container .second-page_text p {
+  padding: 30px 160px 20px 0;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: hsl(232, 10%, 55%);
+}
+.second-page_container .second-page_text a {
+  text-decoration: none;
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(212, 27%, 19%);
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+.second-page_container .second-page_text a:hover {
+  border-bottom: 5px ridge hsl(51, 100%, 49%);
+}
+
+@media only screen and (max-width: 1290px) {
+  .second-page .second-page_text p {
+    padding: 30px 50px 20px 0;
+  }
+}
+@media only screen and (max-width: 1259px) {
+  .second-page .second-page_text {
+    margin-left: 40px;
+  }
+  .second-page .second-page_text h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .second-page .second-page_text p {
+    padding: 30px 50px 20px 0;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+@media only screen and (max-width: 1075px) {
+  .second-page_container {
+    flex-direction: column;
+  }
+  .second-page_container .second-page_text {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .second-page_container .second-page_text h2 {
+    padding-right: 0;
+  }
+  .second-page_container .second-page_text p {
+    padding: 30px 30px 20px 30px;
+  }
+  .second-page_container .second-page_img img {
+    height: 350px;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .second-page .second-page_text {
+    margin-top: 20px;
+  }
+  .second-page .second-page_text h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .second-page .second-page_text a {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .second-page .second-page_text p {
+    padding: 10px 30px 10px 30px;
+  }
+  .second-page .second-page_img img {
+    height: 200px;
+    width: 230px;
+  }
+}
+.third-page {
+  background-color: white;
+}
+.third-page_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.third-page_container .third-page_text {
+  margin-left: 150px;
+}
+.third-page_container .third-page_text h2 {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(212, 27%, 19%);
+  padding-right: 50px;
+}
+.third-page_container .third-page_text p {
+  padding: 30px 160px 20px 0;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: hsl(232, 10%, 55%);
+}
+.third-page_container .third-page_text a {
+  text-decoration: none;
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(212, 27%, 19%);
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+.third-page_container .third-page_text a:hover {
+  border-bottom: 5px ridge hsl(7, 99%, 70%);
+}
+
+@media only screen and (max-width: 1290px) {
+  .third-page .third-page_text p {
+    padding: 30px 50px 20px 0;
+  }
+}
+@media only screen and (max-width: 1259px) {
+  .third-page .third-page_text {
+    margin-left: 40px;
+  }
+  .third-page .third-page_text h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .third-page .third-page_text p {
+    padding: 30px 50px 20px 0;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+@media only screen and (max-width: 1075px) {
+  .third-page_container {
+    flex-direction: column-reverse;
+  }
+  .third-page_container .third-page_text {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .third-page_container .third-page_text h2 {
+    padding-right: 0;
+  }
+  .third-page_container .third-page_text p {
+    padding: 30px 30px 20px 30px;
+  }
+  .third-page_container .third-page_img img {
+    height: 350px;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .third-page .third-page_text {
+    margin-top: 20px;
+  }
+  .third-page .third-page_text h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .third-page .third-page_text a {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .third-page .third-page_text p {
+    padding: 10px 30px 10px 30px;
+  }
+  .third-page .third-page_img img {
+    height: 200px;
+    width: 230px;
+  }
+}
+.fifth-page_container {
+  margin-top: 100px;
+}
+.fifth-page_container h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: hsl(210, 4%, 67%);
+  font-family: "Fraunces", serif;
+  letter-spacing: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.fifth-page_container .cards {
+  padding: 0 100px 0 100px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.fifth-page_container .cards .card1,
+.fifth-page_container .cards .card2,
+.fifth-page_container .cards .card3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fifth-page_container .cards h5 {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  font-size: 16px;
+  font-weight: 700;
+}
+.fifth-page_container .cards small {
+  color: hsl(210, 4%, 67%);
+  font-size: 12px;
+  font-weight: 400;
+}
+.fifth-page_container .cards p {
+  padding: 0 20px 40px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(232, 10%, 55%);
+}
+.fifth-page_container .cards img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1225px) {
+  .fifth-page_container .cards {
+    flex-direction: column;
+  }
+  .fifth-page_container .cards p {
+    padding: 0 150px 40px 150px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .fifth-page_container .cards p {
+    padding: 0 20px 40px 20px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .fifth-page_container h3 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .fifth-page_container .cards {
+    margin-top: 60px;
+  }
+  .fifth-page_container .cards p {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .fifth-page_container .cards img {
+    width: 40px;
+    height: 40px;
+  }
+}
+.img-sec_container {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.img-sec img {
+  height: 380px;
+  width: 320px;
+}
+
+@media only screen and (max-width: 1230px) {
+  .img-sec_container img {
+    height: 270px;
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 804px) {
+  .img-sec_container {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 436px) {
+  .img-sec_container {
+    margin-top: 0;
+  }
+  .img-sec_container img {
+    height: 180px;
+    width: 130px;
+  }
+}
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0 70px 0;
+  background-color: hsl(168, 42%, 54%);
+}
+.footer_container .logo {
+  width: 200px;
+  height: 40px;
+}
+.footer_container .footer-text {
+  margin-top: 40px;
+  width: 300px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  color: hsl(167, 40%, 24%);
+}
+.footer_container .footer-text h5 {
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer_container .footer-text h5:hover {
+  color: hsl(0, 0%, 100%);
+}
+.footer_container .social-media {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  margin-top: 80px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 364px) {
+  .footer_container .logo {
+    width: 80px;
+    height: 20px;
+  }
+  .footer .footer-text {
+    width: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
